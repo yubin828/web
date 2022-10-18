@@ -1,0 +1,124 @@
+.slide {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  user-select: none;
+}
+.imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 850px;
+  flex-shrink: 0;
+  transition: left 0.15s;
+}
+
+img {
+  width: 80%; height: 90%;
+}
+
+.slide_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(50% - 16px);
+  font-size: 70px;
+  cursor: pointer;
+  color: #00429e;
+}
+
+.left_button {
+  left: 20px;
+}
+.right_button {
+  right: 20px;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slide_pagination {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.slide_pagination > li { /*아래 위치바*/
+  color: #296bc7;
+  cursor: pointer;
+  font-size: 25px;
+}
+.slide_pagination > li.active { /*현재 슬라이드*/
+  color: #00429e;
+}
+
+.imgs_duplicate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 300px;
+  flex-shrink: 0;
+  transition: left 0.1s;
+}
+
+.a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0px;
+  width: 100%;
+  height: 800px;
+  flex-shrink: 0;
+  transition: left 0.15;
+}
+
+a:link {
+  color : black;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color : black;
+  text-decoration: none;
+}
+a:hover {
+  color : red;
+  text-decoration: underline;
+}
+
+p {
+  float: left;
+}
+.name {
+  margin-left: 220px;
+}
+
+.one {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 0%;
+  left: 40%;
+  /*transform: translate( -50%, -50% );*/
+  color: rgb(0, 0, 0);
+}
